@@ -1,6 +1,68 @@
 import React, { Component } from 'react';
+import Axios from 'axios';
 
 class Contact extends Component {
+
+    state = {
+      emailContent:{name:"John Doe", email:"johndoe@example.com",subject:"Enter the Subject here...",message:"Enter the Message here..."},
+      disabled:"",
+      showLoader:"",
+      emailSent:false    
+    }
+    constructor(props) {
+        super(props);
+    }
+
+
+    submitHandler = (event) => {
+      event.preventDefault();
+      this.setState({                        
+          showLoader:true
+      });
+        console.log(this.state.emailContent);
+        Axios.post('http://localhost:3030/api/email', this.state)
+            .then(res => {
+              console.log(res);
+                if(res.data.status == 1) {
+                    console.log("emailSent");
+                    this.setState({                        
+                        disabled: true,
+                        emailSent: true,
+                        showLoader:false
+                    });
+                } else {
+                    this.setState({
+                        disabled: false,
+                        emailSent: false
+                    });
+                }
+            })
+            .catch(err => {
+                console.log(err);
+
+                this.setState({
+                    disabled: false,
+                    emailSent: false
+                });
+            })
+    }
+  handleNameChange = (event)=>{
+      this.state.emailContent.name = event.target.value;
+      console.log(this.state.emailContent.name);
+  }
+  handleEmailChange = (event)=>{
+      this.state.emailContent.email = event.target.value;
+      console.log(this.state.emailContent.email);
+  }
+  handleSubjectChange = (event)=>{
+      this.state.emailContent.subject = event.target.value;
+      console.log(this.state.emailContent.subject);
+  }
+  handleMessageChange = (event)=>{
+      this.state.emailContent.message = event.target.value;
+      console.log(this.state.emailContent.message);
+  }
+
   render() {
 
     if(this.props.data){
@@ -36,42 +98,52 @@ class Contact extends Component {
          <div className="row">
             <div className="eight columns">
 
-               <form action="" method="post" id="contactForm" name="contactForm">
+               <form id="contactForm" onSubmit={this.submitHandler} name="contactForm">
 					<fieldset>
 
                   <div>
 						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName"  onChange={this.handleNameChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleEmailChange}/>
                   </div>
 
                   <div>
 						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleChange}/>
+						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleSubjectChange}/>
                   </div>
 
                   <div>
                      <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={this.handleMessageChange}></textarea>
                   </div>
 
                   <div>
-                     <button className="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span>
+                     <button type="submit" disabled={this.state.disabled}>Send</button>
+                     <div>
+                      {(this.state.showLoader == true) ? (
+                         <span id="image-loader">
+                            <img alt="" src="images/loader.gif" />
+                         </span>
+                       ) : (
+                          <div id="message-warning"></div>
+                       )}
+                     </div>
                   </div>
 					</fieldset>
 				   </form>
+           <div>
+  				   {(this.state.disabled == true) ? (
+             <div id="message-success">
+                    <i className="fa fa-check"></i>Your message was sent, thank you {this.state.emailContent.name}<br />
+  				   </div> ) : (
+                <div id="message-warning"> </div>
+             )}
+           </div>
 
-           <div id="message-warning"> Error boy</div>
-				   <div id="message-success">
-                  <i className="fa fa-check"></i>Your message was sent, thank you!<br />
-				   </div>
            </div>
 
 
@@ -86,28 +158,6 @@ class Contact extends Component {
 						   <span>{phone}</span>
 					   </p>
 				   </div>
-
-               <div className="widget widget_tweets">
-                  <h4 className="widget-title">Latest Tweets</h4>
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-		         </div>
             </aside>
       </div>
    </section>

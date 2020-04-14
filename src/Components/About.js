@@ -1,6 +1,21 @@
 import React, { Component } from 'react';
 
 class About extends Component {
+    downloadResume = ()=>{
+      // fake server request, getting the file url as response
+      setTimeout(() => {
+        const response = {
+          file: 'https://mypersonalblogbucket.s3.amazonaws.com/Darshan_Updated_Resume.pdf',
+        };
+        // server sent the url to the file!
+        // now, let's download:
+        window.open(response.file);
+        // you could also do:
+        // window.location.href = response.file;
+      }, 100);
+    }
+
+
   render() {
 
     if(this.props.data){
@@ -15,7 +30,6 @@ class About extends Component {
       var email = this.props.data.email;
       var resumeDownload = this.props.data.resumedownload;
     }
-
     return (
       <section id="about">
       <div className="row">
@@ -40,7 +54,7 @@ class About extends Component {
                </div>
                <div className="columns download">
                   <p>
-                     <a href={resumeDownload} className="button"><i className="fa fa-download"></i>Download Resume</a>
+                     <a onClick={this.downloadResume} className="button" download><i className="fa fa-file"></i>View Resume</a>
                   </p>
                </div>
             </div>

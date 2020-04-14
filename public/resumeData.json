@@ -1,116 +1,146 @@
 {
   "main": {
-    "name":"Tim Baker",
-    "occupation":"(Your Occupation Here)",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "name":"Darshan Kodipalli",
+    "occupation":"Blockchain and DevOps Engineer",
+    "description":"Software Developer with an experience in developing Decentralised Web applications using Ethereum Public and Hyperledger Private Blockchains. Developed quite a number of web applications that had their functionalities extended to Hyperledger Blockchain. Working experience in Docker-ising the infrastructure and bringing them up using Docker-Compose and AWS's CodePipeline. Well versed in building a continuous integration and delivery (CI/CD) workflow for the serverless applications using the AWS Developer tools. Working experience is implementing Continuous Integration and Continuous Delivery and Deployment using bitbucket’s Pipelines for various platforms.",
+    "image":"resize.png",
+    "bio":"Working experience in Docker-ising the infrastructure and bringing them up using Docker-Compose and AWS's CodePipeline. Well versed in building a continuous integration and delivery (CI/CD) workflow for the serverless applications using the AWS Developer tools. Working experience is implementing Continuous Integration and Continuous Delivery and Deployment using bitbucket’s Pipelines for various platforms. Working experience in developing hybrid mobile applications for Android and IOS using Ionic and Cordova and Native android applications using Java. Fascinated to solve modern problems in Computer Science focusing mainly on Distributed Computing and Machine Learning. In addition, I spend most of my time cooking and playing soccer, as a medium to fight the stress. Preparing food, for me is one of life’s greatest joys one can ever experience. I spend most of my life in front of Screens, and cooking for me is one of the best antidote.",
+    "contactmessage":"To Hire me, Contact me at..",
+    "email": "darshan.kodipalli@gmail.com",
+    "phone": "(312) 973-9215",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"2951, South King Drive",
+      "city":"Chicago",
+      "state":"Illinois",
+      "zip": "60616"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "https://www.linkedin.com/in/dkodipalli/",
+    "resumedownload":"https://www.linkedin.com/in/dkodipalli/",
     "social":[
       {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/dkodipalli/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/DarshanKodipalli",
+        "className":"fa fa-github"
+      },
+      {
         "name":"facebook",
-        "url":"http://facebook.com/tim.baker.906",
+        "url":"https://kk-kz.facebook.com/darshan.kodipalli",
         "className":"fa fa-facebook"
       },
       {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"https://twitter.com/KodipalliD",
         "className":"fa fa-twitter"
       },
       {
-        "name":"google-plus",
-        "url":"http://googleplus.com/tbakerx",
-        "className":"fa fa-google-plus"
-      },
-      {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
-        "className":"fa fa-linkedin"
-      },
-      {
         "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
+        "url":"https://www.instagram.com/nahsrad_k/",
         "className":"fa fa-instagram"
-      },
-      {
-        "name":"github",
-        "url":"http://github.com/tbakerx",
-        "className":"fa fa-github"
-      },
-      {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Illinois Institute of Technology",
+        "degree":"Masters of Science in Computer Science",
+        "graduated":"May, 2021",
+        "description":"Developed 8 projects on Web and Mobile applications combined. Participated in a couple of Hackathons whilst at College."
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Visvesvaraya Technological University",
+        "degree":"Bachelors in Computer Science",
+        "graduated":"July, 2016",
+        "description":"Most Innovative Project - 2016 | Published a Paper on Port Scanning Methodologies ~ NCICT 2015 | Best Graphics Project - 2014 | Coordinator of Furore-2012 | Runner-up of College's Football Tournament"
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Aeries Blockchain Corporation",
+        "title":"Blockchain Developer",
+        "years":"April, 2018 - July, 2019",
+        "description":" Designed and Developed a Decentralised Web application using a MEAN stack and Hyperledger-Fabric private Blockchain for monitoring the order tracking and payments between 2 parties | Automated the Continuous Integration and Continuous Deployment process on Jenkins for any project with a predefined configuration."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Xanbell Technologies",
+        "title":"Software Engineer",
+        "years":"January, 2017 - April 2018",
+        "description":"Designed and Developed a Web and Cross-platform Mobile application for tracking daily routines using MEAN stack and Ionic/Cordova | Worked on a Document Verification platform using Ethereum Public Blockchain | Part of a Web development team that worked on Company's Flagship Product, QTC+ which was for move management."
+      },
+      {
+        "company":"Rare Mile Technologies",
+        "title":"Software Engineer",
+        "years":"July, 2016 - January, 2017",
+        "description":"Worked on IoT based Inventory Managements System for GE's Predix Cloud Platform."
+      },
+      {
+        "company":"Taurus Hard Soft Solutions Pvt Ltd",
+        "title":"Internship",
+        "years":"September, 2015 - December 2015",
+        "description":"Trained on Network Configurations."
       }
     ],
     "skills":[
+      {
+        "name":"Hyperledger",
+        "level":"90%"
+      },
+      {
+        "name":"Ethereum",
+        "level":"65%"
+      },
+      {
+        "name":"NodeJS",
+        "level":"90%"
+      },
+      {
+        "name":"Java",
+        "level":"90%"
+      },
+      {
+        "name":"Angular.js",
+        "level":"80%"
+      },
+      {
+        "name":"ReactJS",
+        "level":"70%"
+      },
+      {
+        "name":"MongoDB",
+        "level":"80%"
+      },
+      {
+        "name":"AWS",
+        "level":"90%"
+      },
+      {
+        "name":"Pivotal",
+        "level":"60%"
+      },
+      {
+        "name":"Docker / Docker-Compose",
+        "level":"100%"
+      },
+      {
+        "name":"Jenkins",
+        "level":"90%"
+      },
       {
         "name":"Git",
         "level":"60%"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
-      },
-      {
-        "name":"ReactJs",
-        "level":"50%"
-      },
-      {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
+        "name":"BitBucket",
         "level":"80%"
       },
       {
-        "name":"VueJs",
-        "level":"50%"
-      },
-      {
-        "name":"MongoDB",
+        "name":"REST / GraphQL",
         "level":"80%"
       }
     ]
@@ -118,46 +148,71 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"BestDeal",
+        "category":"BestDeal is an online web portal for users to login and Shop.",
+        "image":"rsz_best.png",
+        "url":"https://github.com/DarshanKodipalli/BestDeal-Web-Application"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"Manage 401(K)",
+        "category":"Digitisation of disbursing and tracking of the 401(k) contributions by the employees.",
+        "image":"rsz_manifest.png",
+        "url":"https://github.com/DarshanKodipalli/manage401K"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"RideShare",
+        "category":"A web application to manage taxi ridesharing using Java Servlets, Python, AngularJS and Machine Learning.",
+        "image":"rsz_rideshare.png",
+        "url":"https://github.com/DarshanKodipalli/RideShare"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"Order Tracker",
+        "category":"Developed a Decentralised web application using the MEAN stack and Hyperledger Fabric that simulates the Inventory Management System starting from placing an order, approving it by a checker and receiving the order",
+        "image":"rsz_1art.png",
+        "url":"https://github.com/DarshanKodipalli/ART"
       }
+
     ]
   },
+  "certifications":{
+    "certificates": [
+      {
+        "title":"Building Scalable Java Microservices with Spring Boot and Spring Cloud",
+        "category":"Coursera ~ 3R8FZP94NL3F",
+        "image":"coursera.png",
+        "id":"3R8FZP94NL3F",
+        "url":"https://www.coursera.org/account/accomplishments/verify/3R8FZP94NL3F"
+      },
+      {
+        "title":"Blockchain Development on Hyperledger Fabric using Composer",
+        "category":"Udemy ~ UC-LH2T2DW2",
+        "image":"udemy2.png",
+        "id":"UC-LH2T2DW2",
+        "url":"http://ude.my/UC-LH2T2DW2"
+      }
+    ]
+  },  
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text":"Darshan is a diligent and responsible team member. He worked with me for more than two years for many blockchain projects. In 2017, Blockchain was a fresh ecosystem with not so many sophisticated tools and knowledge artifacts available. It needed a lot of patience to research, investigate and implement the solution. Darshan was always up for it. I wish him good luck. I am sure he will be an asset to any team that he works with and will always be a Go-to employee for his manager. ",
+        "user":"Rahul Golash  (VP Emerging Technologies at The Block Ledger)",
+        "userURL":"https://www.linkedin.com/in/rahulgolash/"
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text":"Darshan was a fantastic person to work with and is multi-skilled. We worked together on developing web applications with smart contract development on Ethereum, Hyperledger Fabric projects. He was always capable of adapting to new working environments. He has good knowledge of DevOps tools and Security Attacks. I highly recommend him.",
+        "user":"Praveen Challa (Senior Software Engineer at U&Me Communication)",
+        "userURL":"https://www.linkedin.com/in/pravn1729/"
+      },
+      {
+        "text":"Darshan was a asset to the team, his contributions and support has helped build our product faster and with fewer bugs .Darshan used to pro actively seek tasks even if the technology was alien to him he used to do a quick crash course and get started with the task. His project demonstrations and knowledge sharing was very apt and well done. I thanks Darshan for all his contributions and would definitely like to work with him again if roads cross. All the best!  ",
+        "user":"Divya Nair  (I am a #Futureshaper)",
+        "userURL":"https://www.linkedin.com/in/divya-nair-85a004113/"
+      },
+      {
+        "text":"Darshan is one of those people who genuinely has passion for technology and a hunger to learn new things. He is someone you can completely depend on. He has a depth of knowledge in his areas of expertise such as Blockchain and DevOps. While working together, I could see that he is always willing to lend a helping hand to others when in need. Being a great team player, he would be an asset to any org.",
+        "user":"Prasath Thangaraj  (Director, Engineering (Hiring for Java, Automation, DevOps, UI, DB))",
+        "userURL":"https://www.linkedin.com/in/prasvo/"
       }
     ]
   }
