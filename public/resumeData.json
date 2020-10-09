@@ -1,7 +1,7 @@
 {
   "main": {
     "name":"Darshan Kodipalli",
-    "occupation":"Blockchain and DevOps Engineer",
+    "occupation":"Software Engineer",
     "description":"Software Developer with an experience in developing Decentralised Web applications using Ethereum Public and Hyperledger Private Blockchains. Developed quite a number of web applications that had their functionalities extended to Hyperledger Blockchain. Working experience in Docker-ising the infrastructure and bringing them up using Docker-Compose and AWS's CodePipeline. Well versed in building a continuous integration and delivery (CI/CD) workflow for the serverless applications using the AWS Developer tools. Working experience is implementing Continuous Integration and Continuous Delivery and Deployment using bitbucket’s Pipelines for various platforms.",
     "image":"resize.png",
     "bio":"Working experience in Docker-ising the infrastructure and bringing them up using Docker-Compose and AWS's CodePipeline. Well versed in building a continuous integration and delivery (CI/CD) workflow for the serverless applications using the AWS Developer tools. Working experience is implementing Continuous Integration and Continuous Delivery and Deployment using bitbucket’s Pipelines for various platforms. Working experience in developing hybrid mobile applications for Android and IOS using Ionic and Cordova and Native android applications using Java. Fascinated to solve modern problems in Computer Science focusing mainly on Distributed Computing and Machine Learning. In addition, I spend most of my time cooking and playing soccer, as a medium to fight the stress. Preparing food, for me is one of life’s greatest joys one can ever experience. I spend most of my life in front of Screens, and cooking for me is one of the best antidote.",
@@ -51,7 +51,7 @@
         "school":"Illinois Institute of Technology",
         "degree":"Masters of Science in Computer Science",
         "graduated":"May, 2021",
-        "description":"Developed 8 projects on Web and Mobile applications combined. Participated in a couple of Hackathons whilst at College."
+        "description":"Completed courses on Enterprise Web application, Mobile Application Development, Advanced Database Organization, System and Network Security, Information security, Computer Networks. Built 2 websites ~ Best deal (e-commerce website) and Rideshare as a part of the Enterprise Web application course and 5 Android applications as a part of Mobile Application Development Course."
       },
       {
         "school":"Visvesvaraya Technological University",
@@ -62,22 +62,28 @@
     ],
     "work":[
       {
+        "company":"Manifest",
+        "title":"Software Engineer Intern",
+        "years":"May, 2020 - Present",
+        "description":"● Developed an Admin application and Component library design system for tracking the 401k transfers using React.js ● Standardized the builds, automated the tests and deployments using bitbucket’s CI/CD pipelines ● Containerized the application using docker and deployed it on AWS’s Elastic Container Service which made the application fault-tolerant and that also improved the performance of the application by a significant margin ● Deployed the front-end application on AWS’s S3 bucket by also moving to objects to the intelligent tiering model that saved the cost of hosting the application by a considerable margin ● Implemented Content Delivery network using CloudFront to the application which prevented the site crashes during traffic surges"
+      },
+      {
         "company":"Aeries Blockchain Corporation",
         "title":"Blockchain Developer",
         "years":"April, 2018 - July, 2019",
-        "description":" Designed and Developed a Decentralised Web application using a MEAN stack and Hyperledger-Fabric private Blockchain for monitoring the order tracking and payments between 2 parties | Automated the Continuous Integration and Continuous Deployment process on Jenkins for any project with a predefined configuration."
+        "description":" ● Optimized the Ethereum platform to run at 100 transactions/second and came up with a mechanism to secure private keys without having a single point of failure. Engineered an eventual consistency system using Redis to improve the transaction rate ● Built a NodeJS microservice connecting an ethereum DAPP and exposing REST API while storing each new event in MongoDB ● Implemented a NodeJS script for auto-generating deployable Docker containers to add secure Quorum nodes ● Developed a custom multi-sig wallet smart contract and contributed to secure the private keys within a Docker container"
       },
       {
         "company":"Xanbell Technologies",
         "title":"Software Engineer",
         "years":"January, 2017 - April 2018",
-        "description":"Designed and Developed a Web and Cross-platform Mobile application for tracking daily routines using MEAN stack and Ionic/Cordova | Worked on a Document Verification platform using Ethereum Public Blockchain | Part of a Web development team that worked on Company's Flagship Product, QTC+ which was for move management."
+        "description":"● Built a NodeJS web application that interfaced with ethereum to handle student document verification and redesigned the ethereum smart contracts, which reduced gas consumption by 25-30 % ● Dockerized the product and made is highly scalable and increased its availability using Kubernetes. ● Devised a signature-based authentication for inter-microservice communication between 4 microservices ● Was part of the 5-member team which designed and implemented a spring boot web application for corporate relocation"
       },
       {
         "company":"Rare Mile Technologies",
         "title":"Software Engineer",
         "years":"July, 2016 - January, 2017",
-        "description":"Worked on IoT based Inventory Managements System for GE's Predix Cloud Platform."
+        "description":"● Worked on the user interface for an Inventory Management System and contrived a custom authentication mechanism loosely based on OAuth in the backend and developed a system using Python and C++ to read RFID tags and send the data securely to the cloud"
       },
       {
         "company":"Taurus Hard Soft Solutions Pvt Ltd",

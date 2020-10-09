@@ -78,87 +78,14 @@ class Contact extends Component {
 
     return (
       <section id="contact">
-
-         <div className="row section-head">
-
-            <div className="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div className="ten columns">
-
-                  <p className="lead">{message}</p>
-
-            </div>
-
-         </div>
-
          <div className="row">
-            <div className="eight columns">
-
-               <form id="contactForm" onSubmit={this.submitHandler} name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label htmlFor="contactName">Name <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactName" name="contactName"  onChange={this.handleNameChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-						   <input type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={this.handleEmailChange}/>
-                  </div>
-
-                  <div>
-						   <label htmlFor="contactSubject">Subject</label>
-						   <input type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={this.handleSubjectChange}/>
-                  </div>
-
-                  <div>
-                     <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={this.handleMessageChange}></textarea>
-                  </div>
-
-                  <div>
-                     <button type="submit" disabled={this.state.disabled}>Send</button>
-                     <div>
-                      {(this.state.showLoader == true) ? (
-                         <span id="image-loader">
-                            <img alt="" src="images/loader.gif" />
-                         </span>
-                       ) : (
-                          <div id="message-warning"></div>
-                       )}
-                     </div>
-                  </div>
-					</fieldset>
-				   </form>
-           <div>
-  				   {(this.state.disabled == true) ? (
-             <div id="message-success">
-                    <i className="fa fa-check"></i>Your message was sent, thank you {this.state.emailContent.name}<br />
-  				   </div> ) : (
-                <div id="message-warning"> </div>
-             )}
-           </div>
-
-           </div>
-
-
-            <aside className="four columns footer-widgets">
-               <div className="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p className="address">
-						   {name}<br />
-						   {street} <br />
-						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
-					   </p>
-				   </div>
-            </aside>
+          <h4>Address and Phone</h4>
+          <p className="address">
+            {name}<br />
+            {street} <br />
+            {city}, {state} {zip}<br />
+            <span>{phone}</span>
+          </p>
       </div>
    </section>
     );

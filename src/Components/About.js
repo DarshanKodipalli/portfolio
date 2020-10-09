@@ -5,7 +5,7 @@ class About extends Component {
       // fake server request, getting the file url as response
       setTimeout(() => {
         const response = {
-          file: 'https://mypersonalblogbucket.s3.amazonaws.com/Darshan_Updated_Resume.pdf',
+          file: 'https://mypersonalblogbucket.s3.amazonaws.com/Darshan_Resume.pdf',
         };
         // server sent the url to the file!
         // now, let's download:
